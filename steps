@@ -1,0 +1,20 @@
+*** 1 Install docker-sync ****
+
+You may elect to install docker-sync as a non-root user. To install as the current user:
+
+gem install --user-install docker-sync
+
+Then set-up your shell to add the docker-sync command to the PATH. Edit .bashrc:
+
+if which ruby >/dev/null && which gem >/dev/null; then
+  PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+
+Run source ~/.bashrc
+
+Start a new shell and run docker-sync.
+
+*** 2 Docker ****
+
+
+
